@@ -64,5 +64,6 @@
 		<module>springcloud-provide-user</module>
 		<module>springcloud-consumer-user</module>
 		<module>springcloud-discovery-eureka</module>
+		<module>springcloud-consumer-user-ribbon</module>
 	</modules>
 </project>
