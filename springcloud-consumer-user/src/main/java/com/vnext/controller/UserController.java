@@ -21,5 +21,11 @@ public class UserController {
 	public Result findById() {
 		return this.restTemplate.getForObject(this.userServicePath, Result.class);
 	}
+	
+/*	@GetMapping("/consumer/all")
+	public Result getAll() {
+		// SH-RAD02-V17.shwpg.com:springcloud-provide-user:8087
+		return this.restTemplate.getForObject("http://springcloud-provide-user/api/sysUsers", Result.class);
+	}*/
 
 }

@@ -1,14 +1,11 @@
-security:
-  basic:
-    enabled: true
-  user:
-    name: user
-    password: password123
 server:
   port: 9001
+
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://user:password123@localhost:9001/eureka
+      defaultZone: http://localhost:9001/eureka
+      # defaultZone: http://user:password123@localhost:9001/eureka
+
