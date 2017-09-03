@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springcloud-gateway-zuul
+
+server:
+  port: 9005
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+ 
+zuul:
+  routes:
+    springcloud-provide-user: /users/**
