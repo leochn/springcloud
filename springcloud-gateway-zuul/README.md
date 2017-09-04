@@ -19,8 +19,13 @@ zuul:
 http://10.127.127.1:9005/users-path/api/sysUsers
 
 4.配置：path + url
+zuul:
+  routes:
+    userABC:
+      path: /users-path/**
+      url: http://localhost:8087
 
-
+http://10.127.127.1:9005/users-path/api/sysUsers
 
 
 5.配置：正则表达式指定路由规则

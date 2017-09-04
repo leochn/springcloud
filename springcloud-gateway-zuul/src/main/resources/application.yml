@@ -16,4 +16,5 @@ zuul:
   routes:
     userABC:
       path: /users-path/**
-      service-id: springcloud-provide-user
+      # service-id: springcloud-provide-user
+      url: http://localhost:8087
