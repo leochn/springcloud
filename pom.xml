@@ -67,5 +67,7 @@
 		<module>springcloud-consumer-user-ribbon</module>
 		<module>springcloud-consumer-user-feign</module>
 		<module>springcloud-gateway-zuul</module>
+		<module>springcloud-gateway-zuul-reg-exp</module>
+		<module>springcloud-provide-users-v1</module>
 	</modules>
 </project>

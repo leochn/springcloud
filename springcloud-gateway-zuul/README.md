@@ -35,6 +35,10 @@ http://10.127.127.1:9005/users-path/api/sysUsers
 
 6.zuul路由的strip-prefix与order
 
+zuul:
+  prefix: /userApi
+
+http://10.20.37.106:9005/userApi/springcloud-provide-user/api/sysUsers
 
 
 
