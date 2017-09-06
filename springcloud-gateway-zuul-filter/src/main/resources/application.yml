@@ -1,9 +1,9 @@
 spring:
   application:
-    name: springcloud-gateway-zuul
+    name: springcloud-gateway-zuul-filter
 
 server:
-  port: 9005
+  port: 9007
 
 eureka:
   client:

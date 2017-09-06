@@ -1,0 +1,5 @@
+# sidecar
+
+sidecar把异构微服务与springcloud的生态空间整合在一起。
+
+sidecar会把异构微服务的健康状态写到 自己sidecar自身微服务的状态下。
