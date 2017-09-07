@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: springcloud-gateway-zuul-fallback
+
+server:
+  port: 9006
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}  # 将Instance ID设置成IP:端口的形式
+
+  
+ 
+zuul:
+  routes:
+    springcloud-provide-user: /users/**

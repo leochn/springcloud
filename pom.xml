@@ -69,5 +69,8 @@
 		<module>springcloud-gateway-zuul</module>
 		<module>springcloud-gateway-zuul-reg-exp</module>
 		<module>springcloud-provide-users-v1</module>
+		<module>springcloud-gateway-zuul-fallback</module>
+		<module>springcloud-sidecar</module>
+		<module>springcloud-gateway-zuul-filter</module>
 	</modules>
 </project>
