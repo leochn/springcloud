@@ -13,6 +13,12 @@ public class Application {
 	public PreZuulFilter preZuulFilter() {
 		return new PreZuulFilter();
 	}
+	
+	@Bean
+	public AccessPasswordFilter accessPasswordFilter() {
+		return new AccessPasswordFilter();
+	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}

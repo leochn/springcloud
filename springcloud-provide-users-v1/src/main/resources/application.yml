@@ -1,0 +1,61 @@
+
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: springcloud-provide-users-v1
+
+jdbc:
+  master:
+    driver-class: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/master_write?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: root
+    initial-size: 1
+    min-idle: 1
+    max-active: 20
+    test-on-borrow: true
+
+  slave01:
+    driver-class: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/master_write?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: root
+    initial-size: 1
+    min-idle: 1
+    max-active: 20
+    test-on-borrow: true
+
+  slave02:
+    driver-class: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/master_write?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: root
+    initial-size: 1
+    min-idle: 1
+    max-active: 20
+    test-on-borrow: true
+
+
+
+# debug=true
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+
+# eureka.client.service-url.defaultZone = http://user:password123@localhost:9001/eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}

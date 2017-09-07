@@ -45,3 +45,12 @@ http://10.20.37.106:9005/userApi/springcloud-provide-user/api/sysUsers
 7.zuul的各种姿势
 
 
+8.zuul配置外部服务的负载均衡??
+zuul配置了2个微服务，每个微服务有3个实例，对这些2个微服务进行负载均衡。
+
+
+
+
+
+
+
