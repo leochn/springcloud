@@ -72,5 +72,6 @@
 		<module>springcloud-gateway-zuul-fallback</module>
 		<module>springcloud-sidecar</module>
 		<module>springcloud-gateway-zuul-filter</module>
+		<module>springcloud-provide-user-docker</module>
 	</modules>
 </project>
