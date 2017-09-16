@@ -74,5 +74,6 @@
 		<module>springcloud-gateway-zuul-filter</module>
 		<module>springcloud-provide-user-docker</module>
 		<module>springcloud-hystrix-dashboard</module>
+		<module>springcloud-hystrix-turbine</module>
 	</modules>
 </project>
