@@ -1,9 +1,6 @@
 server:
-  port: 9020
+  port: 9022
 
-user: 
-  userServicePath: http://localhost:8087/api/sysUsers
-  
 eureka:
   client:
     service-url:
@@ -16,10 +13,11 @@ eureka:
   
 spring:
   application:
-    name: springcloud-consumer-user-ribbon
+    name: springcloud-consumer-user-ribbon-without-eureka
   
-
-
+springcloud-provide-user:
+  ribbon:
+    listOfServers: localhost:8087
   
   
   

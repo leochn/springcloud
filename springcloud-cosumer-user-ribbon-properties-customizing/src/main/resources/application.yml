@@ -1,9 +1,6 @@
 server:
-  port: 9020
+  port: 9021
 
-user: 
-  userServicePath: http://localhost:8087/api/sysUsers
-  
 eureka:
   client:
     service-url:
@@ -16,10 +13,11 @@ eureka:
   
 spring:
   application:
-    name: springcloud-consumer-user-ribbon
+    name: springcloud-consumer-user-ribbon-properties-customizing
   
-
-
+springcloud-provide-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
   
   
   

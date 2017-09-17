@@ -75,5 +75,10 @@
 		<module>springcloud-provide-user-docker</module>
 		<module>springcloud-hystrix-dashboard</module>
 		<module>springcloud-hystrix-turbine</module>
+		<module>
+			springcloud-cosumer-user-ribbon-properties-customizing
+		</module>
+		<module>springcloud-consumer-user-without-eureka</module>
+		<module>springcloud-consumer-user-ribbon-without-eureka</module>
 	</modules>
 </project>
