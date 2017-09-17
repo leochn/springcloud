@@ -78,7 +78,7 @@
 		<module>
 			springcloud-cosumer-user-ribbon-properties-customizing
 		</module>
-		<module>springcloud-consumer-user-without-eureka</module>
 		<module>springcloud-consumer-user-ribbon-without-eureka</module>
+		<module>springcloud-consumer-user-feign-customizing</module>
 	</modules>
 </project>
