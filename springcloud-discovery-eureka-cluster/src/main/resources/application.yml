@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: springcloud-discovery-euraka-cluster
+
+---
+server:
+  port: 9002
+  
+spring:
+  profiles: peer2
+
+eureka:
+  instance:
+    hostname: peer2
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://peer3:9003/eureka,http://peer4:9004/eureka
+
+---
+server:
+  port: 9003
+  
+spring:
+  profiles: peer3
+
+eureka:
+  instance:
+    hostname: peer3
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://peer2:9002/eureka,http://peer4:9004/eureka
+
+
+---
+server:
+  port: 9004
+  
+spring:
+  profiles: peer4
+
+eureka:
+  instance:
+    hostname: peer4
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://peer2:9002/eureka,http://peer3:9003/eureka    
+     
+      

@@ -80,5 +80,6 @@
 		</module>
 		<module>springcloud-consumer-user-ribbon-without-eureka</module>
 		<module>springcloud-consumer-user-feign-customizing</module>
+		<module>springcloud-discovery-eureka-cluster</module>
 	</modules>
 </project>

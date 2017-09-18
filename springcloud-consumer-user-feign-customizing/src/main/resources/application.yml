@@ -19,9 +19,7 @@ eureka:
  
 logging:
   level:
-    com.itmuch.cloud.feign.UserFeignClient: DEBUG 
-
-
+    com.vnext.feign.UserFeignClient: DEBUG 
 
 feign.hystrix.enabled: false ## 索性禁用feign的hystrix支持 
 

@@ -3,7 +3,7 @@ spring:
     name: springcloud-gateway-zuul-fallback
 
 server:
-  port: 9006
+  port: 9041
 
 eureka:
   client:

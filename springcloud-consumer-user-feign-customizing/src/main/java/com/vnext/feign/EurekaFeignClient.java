@@ -1,9 +1,6 @@
 package com.vnext.feign;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
-import com.vnext.config.EurekaFeignClientConfig;
-
 import feign.Param;
 import feign.RequestLine;
 
