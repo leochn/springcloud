@@ -1,10 +1,17 @@
+spring:
+  application:
+    name: springcloud-discovery-euraka
+
 server:
   port: 9001
 
 eureka:
+  datacenter: cloud
+  environment: product
   instance:
     hostname: discoverEuraka
     instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}
+      
   client:
     register-with-eureka: false
     fetch-registry: false
@@ -12,9 +19,6 @@ eureka:
       defaultZone: http://localhost:9001/eureka
       # defaultZone: http://user:password123@localhost:9001/eureka
 
-spring:
-  application:
-    name: springcloud-discovery-euraka
-     
-     
+  server:
+    enable-self-preservation: false   # 设置为false，关闭自我保护模式，在生产环境不要关闭自我保护模式
       
