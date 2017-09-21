@@ -85,5 +85,6 @@
 		<module>
 			springcloud-consumer-user-ribbon-with-hystrix-propagation
 		</module>
+		<module>springcloud-consumer-user-feign-with-hystrix</module>
 	</modules>
 </project>

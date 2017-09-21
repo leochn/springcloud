@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>springcloud-consumer-user-ribbon-with-hystrix-propagation</name>
+	<name>springcloud-consumer-user-feign-with-hystrix</name>
 	<comment></comment>
 	<projects>
 	</projects>

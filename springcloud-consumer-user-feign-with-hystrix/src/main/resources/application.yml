@@ -1,5 +1,11 @@
+  
+spring:
+  application:
+    name: springcloud-consumer-user-feign-with-hystrix
+
 server:
-  port: 9030
+  port: 9052
+
 
 eureka:
   client:
@@ -8,16 +14,6 @@ eureka:
       # defaultZone: http://user:password123@localhost:9001/eureka
   instance:
     prefer-ip-address: true
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}
  
-  
-spring:
-  application:
-    name: springcloud-consumer-user-feign
-  
-
-
-  
-  
-  
   
