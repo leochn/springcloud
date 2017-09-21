@@ -1,0 +1,26 @@
+  
+spring:
+  application:
+    name: springcloud-consumer-user-ribbon-with-hystrix-propagation
+
+server:
+  port: 9051
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+      # defaultZone: http://user:password123@localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}}
+ 
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+  
+
+
+  
+  
+  
+  

@@ -82,5 +82,8 @@
 		<module>springcloud-consumer-user-feign-customizing</module>
 		<module>springcloud-discovery-eureka-cluster</module>
 		<module>springcloud-consumer-user-ribbon-with-hystrix</module>
+		<module>
+			springcloud-consumer-user-ribbon-with-hystrix-propagation
+		</module>
 	</modules>
 </project>
