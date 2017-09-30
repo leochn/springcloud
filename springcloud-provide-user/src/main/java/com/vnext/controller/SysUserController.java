@@ -6,6 +6,7 @@ import com.vnext.core.ResultGenerator;
 import com.vnext.pojo.SysUser;
 import com.vnext.service.SysUserService;
 
+import org.easymock.EasyMock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -152,5 +153,5 @@ public class SysUserController {
 		}
 		return ResultGenerator.genFailResult();
 	}
-
+	
 }
